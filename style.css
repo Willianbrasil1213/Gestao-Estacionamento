@@ -1,0 +1,169 @@
+
+*{
+    margin: 0;
+  
+  }
+
+  body{
+    background-color: #f0f7da;
+  }
+
+
+header{
+    background-color: #ff3d00;
+    padding: 10px;
+    color:#f0f7da;  
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 35px;
+}
+
+.titulo{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align:center;
+}
+
+
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4); 
+  }
+  
+ 
+  .modal-content {
+    background-color: #ff3d00;
+    padding: 10px;
+    border: 0px solid #888;
+    width: 500px; 
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #EBEBEB;
+    border-radius: 15px;
+    justify-content: center;
+    margin: 15% auto
+  }
+  
+
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+.modal-content2 {
+    background-color: #ff3d00;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:#fff;
+    padding: 10px;
+    border: 1px solid #888;
+    width: 1350px; 
+    height: 145px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    margin-left: 100px;
+
+}
+
+
+
+
+.conteudo {
+    background-color: #0a837f;
+    padding: 5px 5px;
+    border-radius: 15px;
+    margin-top: 5px;
+    display: block;
+
+}
+
+.btnsalva {
+    margin-top: 15px;
+    border: 0px;
+    padding: 10px;
+    outline: 0;
+    background-color: #3BD867;
+    color: #fff;
+    border-radius: 9px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+    transition: all ease 0.3ms;
+}
+input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    outline: 0;
+    margin-top: 5px;
+    justify-content: center;
+}
+select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    outline: 0;
+}
+.Modelo_veiculo {
+    width: 60px;
+}
+
+.Placa {
+    width: 65px;
+}
+
+.Cor {
+    width: 65px;
+}
+
+table{
+    border-collapse: collapse;
+    border: 1px solid #8e8e8e;
+    width: 1200px;
+    margin-left: 175px;
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #1f192f;
+    background-color: #b5e8c3;
+  
+  }
+  
+  table th{
+    background-color: #65b8a6;
+    color: #fff;
+  }
+
+  .botao-excluir{
+   
+    border: 0px;
+    padding: 5px;
+    outline: 0;
+    background-color: #ff3d00;
+    color: #fff;
+    border-radius: 9px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+    transition: all ease 0.3ms;
+  }
+
+  .botao-excluir :hover{
+    background-color: #ff3d00;
+  }

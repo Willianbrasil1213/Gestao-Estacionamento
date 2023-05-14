@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Gestão de Estacionamento</title>
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,600;1,700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <header>
+    <h1>ParkMaster</h1>
+    <label>Placa do Carro</label>
+    <input type="text" id="placa2" class="Placa">
+
+  </header>
+
+  <main>
+    <div class="titulo">
+      <h2>Gestão de Estacionamento</h2>
+    </div>
+
+    <div class="modal-content2">
+      <h1>Registro de Entranda de Veiculo</h1>
+      <div class="conteudo">
+        <h2>Informações do Veiculo</h2>
+        <label>Tipo de Veiculo</label>
+        <select id="tipo_veiculo" class="tipo_veiculo">
+          <option value=""></option>
+          <option value="Carro">Carro</option>
+          <option value="Moto">Moto</option>
+          <option value="Van">Van</option>
+          <option value="Caminhao">Caminhão</option>
+          <option value="Carro Eletrico">Carro Eletrico</option>
+          <option value="Moto Eletrica">Moto Eletrica</option>
+          <option value="Bicicletar Eletrica">Bicicletar Eletrica</option>
+        </select>
+        <label>Marcas de Veiculo</label>
+        <select id="Marcas_veiculo" class="Marcas_veiculo">
+          <option value=""></option>
+          <option value="Toyota">Toyota</option>
+          <option value="Ford">Ford</option>
+          <option value="Chevrolet">Chevrolet</option>
+          <option value="Honda">Honda</option>
+          <option value="Nissan">Nissan</option>
+          <option value="Volkswagen">Volkswagen</option>
+          <option value="BMW">BMW</option>
+          <option value="Mercedes-Benz">Mercedes-Benz</option>
+          <option value="Audi">Audi</option>
+          <option value="Porsche">Porsche</option>
+          <option value="Mazda">Mazda</option>
+          <option value="Hyundai">Hyundai</option>
+          <option value="Kia">Kia</option>
+          <option value="Jeep">Jeep</option>
+          <option value="Land Rover">Land Rover</option>
+          <option value="Jaguar">Jaguar</option>
+          <option value="Tesla">Tesla</option>
+          <option value="Volvo">Volvo</option>
+          <option value="Subaru">Subaru</option>
+
+        </select>
+        <label>Modelo do Carro</label>
+        <input type="text" id="Modelo_veiculo" class="Modelo_veiculo">
+        <label>Placa do Carro</label>
+        <input type="text" id="placa" class="Placa">
+        <label>Cor</label>
+        <input type="text" id="Cor" class="Cor">
+
+        <label>Hora</label>
+        <input type="time" id="entrada_veiculo">
+
+        <button id="botao-adicionar" class="btnsalva">Registra</button>
+        <!-- Trigger/Open The Modal -->
+        <button id="myBtn" class="btnsalva">Fecha Registro</button>
+
+      </div>
+    </div>
+
+
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h1>Registro de Saida de Veiculo</h1>
+        <div class="conteudo2">
+          <div class="conteudo">
+            <h2>Tempo de Permanência</h2>
+            <label>Entrada</label>
+            <input type="time" id="Entrada">
+            <label>Saida</label>
+            <input type="time" id="Saida">
+            <label>Total de Hora</label>
+            <input type="text" id="total">
+
+            <button class="btnsalva" onclick="calcularHoras()">Calcular</button>
+
+            <h2>Valor a Pagar</h2>
+            <label>Tempo</label>
+            <input type="text" id="tempo"> x
+            <input type="text" id="taxa">
+            <label>Valor Taxa</label>
+            <button onclick="calcularTotal()" class="btnsalva">Calcular</button>
+
+            <label for="TOTAL2">Resultado:</label>
+            <input type="text" id="TOTAL2">
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="conteudo1">
+      <table id="tabela-dados" border="1">
+        <thead>
+          <th class="center">ID</th>
+          <th>TIPO/</th>
+          <th>MARCA</th>
+          <th>MODELO</th>
+          <th>PLACA</th>
+          <th>COR</th>
+          <th>HORARIO ENTRADA</th>
+          <th class="center">AÇÃO</th>
+        </thead>
+        <tbody id="tabel">
+
+        </tbody>
+      </table>
+
+      <script src="java.js"></script>
+  </main>
+  </div>
+  </div>
+  </div>
+
+
+  </main>
+</body>
+
+</html>
